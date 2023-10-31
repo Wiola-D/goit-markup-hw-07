@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homework-6</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +25,41 @@
   </head>
   <body class="body">
     <header class="header">
+      <div class="menu-toggle">
+        <a class="logo-header link" href="./index.html"
+          >Web<span class="logo-header-st">Studio</span></a
+        >
+        <button
+          class="js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <svg
+            class="burger"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="22"
+            viewBox="0 0 32 22"
+            fill="none"
+          >
+            <g clip-path="url(#clip0_297053_2156)">
+              <path
+                d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861"
+                stroke="#2E2F42"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_297053_2156">
+                <rect width="32" height="22" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
       <div class="header-container container">
         <nav class="navigation">
           <a class="logo-header link" href="./index.html"
@@ -511,6 +547,83 @@
         </form>
       </div>
     </div>
+    <!--Menu do 767px-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="js-close-menu">
+        <svg
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <div class="mm-section">
+        <nav>
+          <ul class="mm-navigation list">
+            <li>
+              <a class="link link-mm" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a class="link link-mm" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li><a class="link link-mm" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="mm-contact">
+          <address class="address">
+            <ul class="mm-navigation list">
+              <li>
+                <a class="mm-tel mm-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mm-email mm-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="list mm-social-media-list">
+            <li class="social-media">
+              <a class="social-links s-l-footer" href=""
+                ><svg class="svg-s-l-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="social-media">
+              <a class="social-links s-l-footer" href=""
+                ><svg class="svg-s-l-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="social-media">
+              <a class="social-links s-l-footer" href=""
+                ><svg class="svg-s-l-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social-media">
+              <a class="social-links s-l-footer" href=""
+                ><svg class="svg-s-l-footer" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
