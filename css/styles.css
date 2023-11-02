@@ -746,6 +746,7 @@ img {
   background: var(--ocean);
   border-radius: 2px;
 }
+/*modal*/
 .modal-bg {
   position: fixed;
   top: 0;
@@ -1153,7 +1154,18 @@ img {
   flex-direction: column;
   justify-content: space-between;
 }
-
+.mm-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vw;
+  width: 428px;
+}
+.mm-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
 .link-mm,
 .mm-tel {
   font-size: 36px;
