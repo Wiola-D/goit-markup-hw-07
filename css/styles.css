@@ -14,13 +14,13 @@
 }
 .container {
   margin: 0 auto;
-  padding: 0 15px 0 15px;
 }
 
 @media screen and (max-width: 767px) {
   .container {
     min-width: 428px;
     max-width: 480px;
+    padding: 0 15px 0 15px;
   }
   .section {
     padding-top: 96px;
@@ -29,17 +29,22 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
-    min-width: 768px;
+    min-width: 650px;
     max-width: 768px;
+    padding: 0 15px 0 16px;
   }
   .section {
     padding-top: 96px;
     padding-bottom: 96px;
   }
 }
+.min-section {
+  width: 650px;
+}
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
+    padding: 0 15px 0 15px;
   }
   .section {
     padding-top: 120px;
@@ -676,7 +681,7 @@ img {
   }
   .footer-first-container {
     width: auto;
-    margin-right: 120px;
+    margin-right: 24px;
   }
 }
 @media screen and (min-width: 1158px) {
