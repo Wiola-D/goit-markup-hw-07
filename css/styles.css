@@ -413,11 +413,6 @@ button:focus {
   display: flex;
 }
 
-.buttons {
-  gap: 24px;
-  margin-bottom: 72px;
-  justify-content: center;
-}
 .buttons .button {
   padding: 12px 24px 12px;
   display: block;
@@ -448,10 +443,43 @@ button:focus {
   gap: 24px;
   row-gap: 48px;
 }
-
-.menu-li {
-  width: calc((100% - 48px) / 3);
+@media screen and (max-width: 767px) {
+  .menu-li {
+    width: 396px;
+    height: 400px;
+  }
+  .menu-li img {
+    width: 100%;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: baseline;
+    gap: 24px;
+    margin-bottom: 72px;
+    max-width: 430px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .menu-li {
+    width: calc((100% - 24px) / 2);
+  }
+  .buttons {
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1159px) {
+  .menu-li {
+    width: calc((100% - 48px) / 3);
+  }
+  .buttons {
+    gap: 24px;
+    margin-bottom: 72px;
+    justify-content: center;
+  }
+}
+
 .link-portfolio {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
