@@ -210,7 +210,6 @@ button:focus {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
 .first-section {
   padding: 112px 0 112px;
   background-color: var(--brand-color);
@@ -571,6 +570,7 @@ button:focus {
 }
 .social-media-list {
   display: flex;
+  justify-content: space-evenly;
   gap: 16px;
 }
 .s-l-footer:hover,
@@ -848,7 +848,6 @@ button:focus {
 
 /* ======================MOBILE_MENU=========================== */
 .menu-toggle {
-  min-width: 428px;
   height: 70px;
   display: flex;
   align-items: center;
@@ -975,7 +974,8 @@ button:focus {
 /*==========================MOBILE===================================*/
 @media screen and (max-width: 767px) {
   .container {
-    min-width: 428px;
+    width: 100%;
+    min-width: 320px;
     max-width: 480px;
     padding: 0 15px 0 15px;
   }
@@ -1010,30 +1010,30 @@ button:focus {
     height: 88px;
   }
   .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
   }
   .footer-first-container {
-    width: auto;
+    width: 268px;
+    margin-bottom: 72px;
+    margin-inline: auto;
   }
+
   .form-container {
     display: block;
+    margin-top: 72px;
   }
-  .subscribe-form {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-direction: column;
+  .footer-second-container {
+    width: 268px;
+    margin-inline: auto;
   }
   .subscribe-input {
-    width: 398px;
+    width: 100%;
+    margin-bottom: 16px;
   }
   .subscribe-button {
     width: 165px;
     padding-left: 24px;
     padding-right: 24px;
+    margin: auto;
   }
   .header-container {
     display: none;
