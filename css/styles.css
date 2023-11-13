@@ -1042,9 +1042,14 @@ button:focus {
 /*==========================TABLET================================*/
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .container {
+    width: 650px;
     min-width: 650px;
     max-width: 768px;
     padding: 0 15px 0 16px;
+  }
+  .second-container,
+  .header-container {
+    width: 100%;
   }
   .section {
     padding-top: 96px;
@@ -1052,9 +1057,11 @@ button:focus {
   }
   .footer-container {
     display: flex;
+
     flex-wrap: wrap;
     flex-direction: row;
     row-gap: 72px;
+    margin: auto;
   }
   .footer-first-container {
     width: auto;
